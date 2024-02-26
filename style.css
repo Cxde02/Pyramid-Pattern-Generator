@@ -1,13 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background: url("./imgs/pyramid.jpg") fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .title {
   text-align: center;
   padding: 2rem;
-  font-size: 25px;
-  letter-spacing: 2.5px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: "Protest Revolution", sans-serif;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 .input {
@@ -19,7 +30,20 @@
 /*Space between the inputs*/
 .input input {
   margin-top: 10px;
-  padding: 3px;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+#lines {
+  font-family: "Courier New", Courier, monospace;
+  width: 10%;
+  text-align: center;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
 }
 
 .pyramid {
@@ -29,7 +53,7 @@
   font-size: 20px;
   /*border: 0.5px solid #000;*/
   border-radius: 1.5rem;
-  background-color: #333333;
+  background: #333333cb;
   max-width: 50%; /* Limit the width to 80% of the viewport */
   padding: 2%; /* Add some space around the pyramid for aesthetics */
 }
@@ -84,4 +108,19 @@
 
 #dispPyramid {
   color: #fff;
+}
+
+#btn {
+  border-radius: 7px;
+  border: none;
+  box-shadow: 1px 2px 5px #535353;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+
+#btn:hover {
+  box-shadow: none;
 }
