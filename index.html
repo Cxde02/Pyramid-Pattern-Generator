@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyramid</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="title">
+      <h2>Pyramid</h2>
+    </div>
+    <div class="input">
+      <input
+        type="text"
+        name="numberOfLines"
+        id="lines"
+        placeholder="Enter number of lines"
+      />
+      <input type="submit" value="Display Tower" onclick="createTower()" />
+      <input
+        type="submit"
+        value="Display Tower Upside Down"
+        onclick="createTowerUD()"
+      />
+      <input type="submit" value="Display Pyramid" onclick="createPyramid()" />
+      <input
+        type="submit"
+        value="Display Pyramid Upside Down"
+        onclick="createPyramidUD()"
+      />
+      <input type="button" value="Clear" onclick="clearPyramid()" />
+      <div class="colors">
+        <input
+          type="button"
+          id="green"
+          value="    "
+          onclick="changeColor('green')"
+        />
+        <input
+          type="button"
+          id="red"
+          value="    "
+          onclick="changeColor('red')"
+        />
+        <input
+          type="button"
+          id="blue"
+          value="    "
+          onclick="changeColor('blue')"
+        />
+        <input
+          type="button"
+          id="purple"
+          value="    "
+          onclick="changeColor('purple')"
+        />
+        <input
+          type="button"
+          id="silver"
+          value="    "
+          onclick="changeColor('silver')"
+        />
+        <input
+          type="button"
+          id="pink"
+          value="    "
+          onclick="changeColor('pink')"
+        />
+        <input
+          type="button"
+          id="yellow"
+          value="    "
+          onclick="changeColor('yellow')"
+        />
+        <input
+          type="button"
+          id="cyan"
+          value="    "
+          onclick="changeColor('cyan')"
+        />
+        <input
+          type="button"
+          id="orange"
+          value="    "
+          onclick="changeColor('orange')"
+        />
+      </div>
+    </div>
+    <div class="pyramid">
+      <!-- Pyramid will be generated here -->
+      <p id="dispPyramid">Pyramid Will Be Displayed here</p>
+    </div>
+  </body>
+</html>
