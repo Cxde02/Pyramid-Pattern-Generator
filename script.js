@@ -80,6 +80,7 @@ function clearPyramid() {
   const Text = "Pyramid Will Be Displayed here";
   document.getElementById("dispPyramid").innerHTML = Text;
   document.getElementById("dispPyramid").style.color = "#fff";
+  document.getElementById("lines").value = "";
 }
 
 function changeColor(color) {
