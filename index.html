@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="title">
-      <h2>Pyramid</h2>
+      <h2>Pyramid Generator</h2>
     </div>
     <div class="input">
       <input
@@ -18,19 +18,31 @@
         id="lines"
         placeholder="Enter number of lines"
       />
-      <input type="submit" value="Display Tower" onclick="createTower()" />
       <input
         type="submit"
+        id="btn"
+        value="Display Tower"
+        onclick="createTower()"
+      />
+      <input
+        type="submit"
+        id="btn"
         value="Display Tower Upside Down"
         onclick="createTowerUD()"
       />
-      <input type="submit" value="Display Pyramid" onclick="createPyramid()" />
       <input
         type="submit"
+        id="btn"
+        value="Display Pyramid"
+        onclick="createPyramid()"
+      />
+      <input
+        type="submit"
+        id="btn"
         value="Display Pyramid Upside Down"
         onclick="createPyramidUD()"
       />
-      <input type="button" value="Clear" onclick="clearPyramid()" />
+      <input type="button" id="btn" value="Clear" onclick="clearPyramid()" />
       <div class="colors">
         <input
           type="button"
